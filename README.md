@@ -5,103 +5,72 @@
 [![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20Web%20%7C%20Android%20%7C%20iOS-lightgrey)](https://flutter.dev)
 [![Responsive](https://img.shields.io/badge/Responsive-Mobile%20%7C%20Tablet%20%7C%20Desktop-brightgreen)]()
 
-**A comprehensive Flutter application showcasing the rich cultural heritage of Palestinian cities through an interactive, responsive interface.**
+**A Flutter application showcasing the cultural and historical richness of Palestinian cities through a modern, responsive interface.**
 
 ---
 
 ## 📋 Overview
 
-Palestine Cities Explorer is an educational mobile and web application developed as part of a Flutter assignment to demonstrate mastery of:
+This project was developed as part of a Flutter assignment to demonstrate:
 
-- **Named Routes & Navigation** – GoRouter implementation
-- **Persistent UI Elements** – Navigation drawer & bottom navigation bar
-- **Responsive Layouts** – Adaptive grid systems for mobile, tablet, and desktop
-- **Custom Theming** – Culturally inspired color palette with Google Fonts
-- **Rich Media Integration** – Local images with graceful error handling
-- **Cross-Platform Compatibility** – Runs on Windows, Web, Android, and iOS
+* Named routing using **GoRouter**
+* Persistent UI (Drawer + Bottom Navigation)
+* Responsive layouts (mobile, tablet, desktop)
+* Custom theming and typography
+* Local asset handling with error fallback
+* Cross-platform support
 
 ---
 
 ## 🏙️ Cities Featured
 
-| # | City | Significance | Key Attractions |
-|---|------|--------------|-----------------|
-| 1 | **Jerusalem** | The Holy City, Capital of Palestine | Dome of the Rock, Al-Aqsa Mosque, Western Wall |
-| 2 | **Bethlehem** | Birthplace of Jesus Christ | Church of Nativity, Milk Grotto, Shepherd's Field |
-| 3 | **Hebron** | City of Patriarchs | Ibrahimi Mosque, Ancient Glassblowing |
-| 4 | **Nablus** | City of Kunafa | Mount Gerizim, Traditional Soap Factories |
-| 5 | **Ramallah** | Cultural Capital | Al-Manara Square, Darwish Museum |
-| 6 | **Jericho** | Oldest City on Earth | Mount of Temptation, Hisham's Palace |
-| 7 | **Nazareth** | Childhood Home of Jesus | Basilica of Annunciation, Mary's Well |
-| 8 | **Jaffa** | Ancient Port City | Jaffa Port, Clock Tower, Flea Market |
-
----
-
-## 🎨 Design System
-
-### Color Palette
-
-| Role | Color Name | Hex Code | Usage |
-|------|------------|----------|-------|
-| Primary | Deep Olive | `#2C4A2E` | AppBar, Bottom Navigation, Buttons |
-| Accent | Palestinian Gold | `#FFD700` | Icons, Active States, Highlights |
-| Secondary | Rich Earth | `#8B4513` | Headers, Borders |
-| Background | Cream Parchment | `#FDFBF7` | Main Background |
-| Surface | Aged Papyrus | `#F0EBE1` | Cards & Alternate Sections |
-
-### Typography
-
-| Element | Font | Style |
-|---------|------|-------|
-| Headings | Playfair Display | Serif, Elegant, Academic |
-| Body Text | Montserrat | Sans-serif, Clean, Readable |
-| Buttons | Montserrat | Semi-bold, 0.5 Letter Spacing |
-
-### Responsive Breakpoints
-
-| Device Class | Screen Width | Grid Columns | Card Height |
-|--------------|--------------|--------------|-------------|
-| Mobile | Less than 600px | 2 columns | 200px |
-| Tablet | 600px to 1200px | 3 columns | 250px |
-| Desktop | Greater than 1200px | 4 columns | 300px |
+* Jerusalem
+* Bethlehem
+* Hebron
+* Nablus
+* Ramallah
+* Jericho
+* Nazareth
+* Jaffa
 
 ---
 
 ## 🗂️ Project Structure
+
+```bash
 palestine-cities-explorer/
 │
 ├── lib/
-│ ├── main.dart
-│ ├── utils/
-│ │ └── responsive_helper.dart
-│ └── screens/
-│ ├── main_layout.dart
-│ ├── home_screen.dart
-│ ├── jerusalem_screen.dart
-│ ├── bethlehem_screen.dart
-│ ├── hebron_screen.dart
-│ ├── nablus_screen.dart
-│ ├── ramallah_screen.dart
-│ ├── jericho_screen.dart
-│ ├── nazareth_screen.dart
-│ └── jaffa_screen.dart
+│   ├── main.dart
+│   ├── utils/
+│   │   └── responsive_helper.dart
+│   └── screens/
+│       ├── main_layout.dart
+│       ├── home_screen.dart
+│       ├── jerusalem_screen.dart
+│       ├── bethlehem_screen.dart
+│       ├── hebron_screen.dart
+│       ├── nablus_screen.dart
+│       ├── ramallah_screen.dart
+│       ├── jericho_screen.dart
+│       ├── nazareth_screen.dart
+│       └── jaffa_screen.dart
 │
 ├── assets/
-│ └── images/
-│ ├── palestine/
-│ ├── jerusalem/
-│ ├── bethlehem/
-│ ├── hebron/
-│ ├── nablus/
-│ ├── ramallah/
-│ ├── jericho/
-│ ├── nazareth/
-│ └── jaffa/
+│   └── images/
+│       ├── palestine/
+│       ├── jerusalem/
+│       ├── bethlehem/
+│       ├── hebron/
+│       ├── nablus/
+│       ├── ramallah/
+│       ├── jericho/
+│       ├── nazareth/
+│       └── jaffa/
 │
 ├── pubspec.yaml
 └── README.md
-
-text
+```
 
 ---
 
@@ -109,148 +78,93 @@ text
 
 ### Prerequisites
 
-| Requirement | Version |
-|-------------|---------|
-| Flutter SDK | 3.11.0 or higher |
-| Dart SDK | 3.11.0 or higher |
-| IDE | VS Code / Android Studio / IntelliJ |
+* Flutter SDK (3.11+)
+* Dart SDK (3.11+)
+* VS Code / Android Studio / IntelliJ
 
-### Step-by-Step Installation
-
-**1. Clone the repository**
+### Run Locally
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/palestine-cities-explorer.git
+git clone https://github.com/Jiovanni-k/palestine-cities-explorer.git
 cd palestine-cities-explorer
-2. Install dependencies
-
-bash
 flutter pub get
-3. Run the application
-
-bash
 flutter run
-4. (Optional) Build for specific platforms
+```
 
-bash
-flutter build web      # Web version
-flutter build windows  # Windows desktop
-flutter build apk      # Android APK
-Adding Local Images
-The application expects images in the following structure:
+### Build for Platforms
 
-text
-assets/images/[city-name]/
-├── card.jpg          # Thumbnail for home screen grid
-├── main.jpg          # Hero image for city detail page
-└── [landmark].jpg    # Landmark images (names match code references)
-Note: Placeholder containers appear when images are missing – the app handles missing assets gracefully.
+```bash
+flutter build web
+flutter build windows
+flutter build apk
+```
 
-🧭 Navigation Features
-Feature	Implementation	User Interaction
-Named Routes	GoRouter configuration	URL-based navigation (especially for web)
-Navigation Drawer	Left-side drawer menu	Access via hamburger icon or swipe
-Bottom Navigation Bar	Persistent footer	Quick access to all cities
-City Navigation Arrows	Next/Previous buttons	Sequential browsing through all 8 cities
-Home Screen Grid	Touch/click on city cards	Direct navigation to any city
-🛠️ Technical Implementation
-Key Dependencies
-Package	Version	Purpose
-go_router	^13.0.0	Declarative routing with named routes
-google_fonts	^6.2.1	Custom typography (Playfair Display & Montserrat)
-Core Concepts Demonstrated
-dart
-// 1. Named Routes with GoRouter
-GoRoute(
-  path: '/jerusalem',
-  builder: (context, state) => const MainLayout(selectedIndex: 1),
-)
+---
 
-// 2. Responsive Grid System
-crossAxisCount: ResponsiveHelper.getCrossAxisCount(context),
+## 🧭 Navigation Features
 
-// 3. Custom Theme with Palestinian Colors
-primaryColor: const Color(0xFF8B4513),
-scaffoldBackgroundColor: const Color(0xFFFDFBF7),
+* Named routes using GoRouter
+* Navigation drawer with all cities
+* Bottom navigation bar for quick access
+* Interactive grid on home screen
+* Next/previous navigation between cities
 
-// 4. Persistent Layout Pattern
-Scaffold(
-  appBar: AppBar(...),
-  drawer: Drawer(...),
-  body: _screens[_selectedIndex],
-  bottomNavigationBar: BottomNavigationBar(...),
-)
-📱 Device Compatibility
-Platform	Supported	Testing Status
-Windows Desktop	✅	Verified
-Web (Chrome)	✅	Verified
-Web (Edge)	✅	Verified
-Android	✅	Should work
-iOS	✅	Should work
-macOS	✅	Should work
-Linux	✅	Should work
-📊 Assignment Requirements Checklist
-Requirement	Status	Implementation
-Multi-screen Flutter app	✅	9 screens (Home + 8 cities)
-Named routes	✅	GoRouter with named paths
-Navigation drawer	✅	Left-side drawer with all cities
-Bottom navigation bar	✅	Persistent footer with 9 items
-Container widget	✅	Used throughout for layout
-Text widget	✅	All content uses Text
-Row/Column	✅	Complex layouts using flex
-Stack widget	✅	Image overlays and positioning
-ListView	✅	Scrollable content in all screens
-ListView.builder	✅	Dynamic landmark lists
-GridView	✅	City grid and landmark grids
-Buttons	✅	Navigation and action buttons
-Image widget	✅	Local images with error handling
-Card widget	✅	Material Design cards
-AppBar	✅	Custom-themed app bar
-Scaffold	✅	Material Design scaffold
-🎯 Future Enhancements
-Add search functionality for cities
+---
 
-Implement favorite/bookmark system
+## 🛠️ Tech Stack
 
-Add dark mode support
+* Flutter
+* Dart
+* go_router
+* google_fonts
 
-Integrate Google Maps API for location visualization
+---
 
-Add user reviews and ratings for each city
+## 📱 Compatibility
 
-Implement offline caching of images
+| Platform | Status     |
+| -------- | ---------- |
+| Windows  | ✅ Verified |
+| Web      | ✅ Verified |
+| Android  | ✅ Works    |
+| iOS      | ✅ Works    |
+| macOS    | ✅ Works    |
+| Linux    | ✅ Works    |
 
-Create multi-language support (Arabic/English)
+---
 
-🙏 Acknowledgments
-Palestinian Ministry of Tourism – Cultural and historical information
+## 🎯 Features Implemented
 
-Google Fonts – Playfair Display & Montserrat typography
+* Multi-screen navigation (9 screens)
+* Responsive grid layout
+* Drawer + Bottom Navigation
+* Scrollable pages
+* Image handling with fallback
+* Material Design components
 
-Flutter Team – Comprehensive documentation and framework
+---
 
-📧 Contact
-Developer: [Your Name]
+## 🔮 Future Improvements
 
-GitHub: @YOUR_USERNAME
+* Search functionality
+* Favorites system
+* Dark mode
+* Maps integration
+* Multi-language support
 
-Email: your.email@university.edu
+---
 
-📝 Assignment Context
-This application was developed as a final project for an Advanced Web Development course, demonstrating proficiency in:
+## 📧 Contact
 
-Flutter framework and Dart programming language
+* GitHub: Jiovanni-k
+* Email: jiovannikitlo9@gmail.com
 
-Responsive UI/UX design principles
+---
 
-Navigation patterns and state management
+## 📝 Notes
 
-Custom theming and material design
+This project was created for academic purposes to demonstrate Flutter development skills including UI design, navigation, and responsiveness.
 
-Asset management and image handling
+---
 
-Cross-platform development considerations
-
-⭐ If you found this project helpful, consider starring the repository!
-
-Palestine – Land of Olives and Heritage
+⭐ If you found this useful, consider starring the repository!
