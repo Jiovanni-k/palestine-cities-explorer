@@ -8,6 +8,13 @@
 **A Flutter application showcasing the cultural and historical richness of Palestinian cities through a modern, responsive interface.**
 
 ---
+## 🌐 Live Demo
+
+**Try the app live in your browser! No installation needed.**
+
+👉 **[Click here to explore Palestinian Cities](https://jiovanni-k.github.io/palestine-cities-explorer/)**
+
+The app works on desktop, tablet, and mobile devices.
 
 ## 📋 Overview
 
