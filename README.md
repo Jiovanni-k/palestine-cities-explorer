@@ -2,14 +2,14 @@
 
 [![Flutter](https://img.shields.io/badge/Flutter-3.11+-blue.svg)](https://flutter.dev)
 [![Dart](https://img.shields.io/badge/Dart-3.11+-blue.svg)](https://dart.dev)
-[![Platform](https://img.shields.io/badge/platform-Windows%20|%20macOS%20|%20Linux%20|%20Web%20|%20Android%20|%20iOS-lightgrey)](https://flutter.dev)
-[![Responsive](https://img.shields.io/badge/responsive-mobile%20%7C%20tablet%20%7C%20desktop-brightgreen)]()
+[![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20Web%20%7C%20Android%20%7C%20iOS-lightgrey)](https://flutter.dev)
+[![Responsive](https://img.shields.io/badge/Responsive-Mobile%20%7C%20Tablet%20%7C%20Desktop-brightgreen)]()
 
-> A comprehensive Flutter application showcasing the rich cultural heritage of Palestinian cities through an interactive, responsive interface.
+**A comprehensive Flutter application showcasing the rich cultural heritage of Palestinian cities through an interactive, responsive interface.**
 
 ---
 
-## 📋 **Overview**
+## 📋 Overview
 
 Palestine Cities Explorer is an educational mobile and web application developed as part of a Flutter assignment to demonstrate mastery of:
 
@@ -22,7 +22,7 @@ Palestine Cities Explorer is an educational mobile and web application developed
 
 ---
 
-## 🏙️ **Cities Featured**
+## 🏙️ Cities Featured
 
 | # | City | Significance | Key Attractions |
 |---|------|--------------|-----------------|
@@ -37,7 +37,7 @@ Palestine Cities Explorer is an educational mobile and web application developed
 
 ---
 
-## 🎨 **Design System**
+## 🎨 Design System
 
 ### Color Palette
 
@@ -61,31 +61,33 @@ Palestine Cities Explorer is an educational mobile and web application developed
 
 | Device Class | Screen Width | Grid Columns | Card Height |
 |--------------|--------------|--------------|-------------|
-| Mobile | < 600px | 2 columns | 200px |
-| Tablet | 600 - 1200px | 3 columns | 250px |
-| Desktop | > 1200px | 4 columns | 300px |
+| Mobile | Less than 600px | 2 columns | 200px |
+| Tablet | 600px to 1200px | 3 columns | 250px |
+| Desktop | Greater than 1200px | 4 columns | 300px |
 
 ---
 
-## 🗂️ **Project Structure**
+## 🗂️ Project Structure
 palestine-cities-explorer/
+│
 ├── lib/
-│ ├── main.dart # App entry point & theme configuration
+│ ├── main.dart
 │ ├── utils/
-│ │ └── responsive_helper.dart # Responsive design utilities
+│ │ └── responsive_helper.dart
 │ └── screens/
-│ ├── main_layout.dart # Persistent drawer & bottom nav wrapper
-│ ├── home_screen.dart # Featured cities grid
-│ ├── jerusalem_screen.dart # Jerusalem city details
-│ ├── bethlehem_screen.dart # Bethlehem city details
-│ ├── hebron_screen.dart # Hebron city details
-│ ├── nablus_screen.dart # Nablus city details
-│ ├── ramallah_screen.dart # Ramallah city details
-│ ├── jericho_screen.dart # Jericho city details
-│ ├── nazareth_screen.dart # Nazareth city details
-│ └── jaffa_screen.dart # Jaffa city details
+│ ├── main_layout.dart
+│ ├── home_screen.dart
+│ ├── jerusalem_screen.dart
+│ ├── bethlehem_screen.dart
+│ ├── hebron_screen.dart
+│ ├── nablus_screen.dart
+│ ├── ramallah_screen.dart
+│ ├── jericho_screen.dart
+│ ├── nazareth_screen.dart
+│ └── jaffa_screen.dart
+│
 ├── assets/
-│ └── images/ # Local image assets
+│ └── images/
 │ ├── palestine/
 │ ├── jerusalem/
 │ ├── bethlehem/
@@ -95,14 +97,15 @@ palestine-cities-explorer/
 │ ├── jericho/
 │ ├── nazareth/
 │ └── jaffa/
-├── pubspec.yaml # Dependencies & asset declarations
-└── README.md # Project documentation
+│
+├── pubspec.yaml
+└── README.md
 
 text
 
 ---
 
-## 🚀 **Installation & Setup**
+## 🚀 Installation & Setup
 
 ### Prerequisites
 
@@ -114,18 +117,22 @@ text
 
 ### Step-by-Step Installation
 
+**1. Clone the repository**
+
 ```bash
-# 1. Clone the repository
-git clone https://github.com/Jiovanni-k/palestine-cities-explorer.git
+git clone https://github.com/YOUR_USERNAME/palestine-cities-explorer.git
 cd palestine-cities-explorer
+2. Install dependencies
 
-# 2. Install dependencies
+bash
 flutter pub get
+3. Run the application
 
-# 3. Run the application
+bash
 flutter run
+4. (Optional) Build for specific platforms
 
-# 4. (Optional) Build for specific platforms
+bash
 flutter build web      # Web version
 flutter build windows  # Windows desktop
 flutter build apk      # Android APK
@@ -142,8 +149,8 @@ Note: Placeholder containers appear when images are missing – the app handles 
 🧭 Navigation Features
 Feature	Implementation	User Interaction
 Named Routes	GoRouter configuration	URL-based navigation (especially for web)
-Navigation Drawer	Left-side drawer menu	Access via ☰ hamburger icon or swipe
-Bottom Navigation Bar	Persistent footer	Quick access to first 5 cities
+Navigation Drawer	Left-side drawer menu	Access via hamburger icon or swipe
+Bottom Navigation Bar	Persistent footer	Quick access to all cities
 City Navigation Arrows	Next/Previous buttons	Sequential browsing through all 8 cities
 Home Screen Grid	Touch/click on city cards	Direct navigation to any city
 🛠️ Technical Implementation
@@ -213,12 +220,7 @@ Add user reviews and ratings for each city
 
 Implement offline caching of images
 
-Add push notifications for new content
-
 Create multi-language support (Arabic/English)
-
-🤝 Contributing
-This project was developed as an academic assignment. While not actively seeking contributions, feedback and suggestions are welcome.
 
 🙏 Acknowledgments
 Palestinian Ministry of Tourism – Cultural and historical information
@@ -227,14 +229,12 @@ Google Fonts – Playfair Display & Montserrat typography
 
 Flutter Team – Comprehensive documentation and framework
 
-Wikimedia Commons – Reference images and historical data
-
 📧 Contact
-Developer: Jiovanni Kitlo
+Developer: [Your Name]
 
-GitHub: Jiovanni-k
+GitHub: @YOUR_USERNAME
 
-Email: jiovannikitlo9@gmail.com
+Email: your.email@university.edu
 
 📝 Assignment Context
 This application was developed as a final project for an Advanced Web Development course, demonstrating proficiency in:
@@ -251,9 +251,6 @@ Asset management and image handling
 
 Cross-platform development considerations
 
-<div align="center">
 ⭐ If you found this project helpful, consider starring the repository!
 
 Palestine – Land of Olives and Heritage
-
-</div>
